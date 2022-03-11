@@ -1,0 +1,3 @@
+How to count the number of occurrences of each word?
+ How to count in number or each word in string in
+ Calculating frequency of each word in a sentence in java
