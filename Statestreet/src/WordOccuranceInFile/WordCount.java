@@ -52,13 +52,7 @@ public class WordCount {
 	    wordcount.entrySet()
         .stream()
         .sorted(Map.Entry.comparingByValue(Collections.reverseOrder()))
-        .limit(10)
-        .collect(Collectors.toMap(
-                Map.Entry::getKey,
-                Map.Entry::getValue,
-                (e1, e2) -> e1,
-                LinkedHashMap::new
-        )).forEach((s, integer) -> System.out.println(String.format("%s : %s", s, integer)));
+        .limit(10).forEach(System.out::println);
 	}
 }
 
